@@ -1,0 +1,89 @@
+*:not(html) {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Manrope', sans-serif;
+  text-size-adjust: 100%;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+}
+.middle {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.autoSize {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 16px;
+  width: min(91.466666667%, 540px);
+  text-align: center;
+  padding: 24px 24px 0;
+}
+@media (768px <= width) {
+  .autoSize {
+    padding: 48px 48px 0;
+  }
+}
+#adviceID {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 5px;
+}
+.autoSize h1 {
+  margin-block: 40px;
+}
+.quote {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+  font-weight: 800;
+}
+.quote::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='hsl(193, 38%, 86%)' height='16' width='14' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons  Inc.--%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E");
+}
+.quote::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='hsl(193, 38%, 86%)' height='16' width='14' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons  Inc.--%3E%3Cpath d='M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z'/%3E%3C/svg%3E");
+}
+[alt="divider"] {
+  width: 100%;
+}
+.luck {
+  height: 64px;
+  position: relative;
+}
+@media (768px <= width) {
+  .luck {
+    height: 72px;
+  }
+}
+#change {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: auto auto 0 50%;
+  transform: translate(-50%, 50%);
+  transition: all 200ms linear;
+}
+#change:hover {
+  box-shadow: 0 0 25px 0 hsl(150, 100%, 66%);
+}
